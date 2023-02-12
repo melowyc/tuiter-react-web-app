@@ -138,3 +138,36 @@
     border-width: 1px;
     border-color: rgb(110,118,125);
 }
+.right-border-none {
+    border-right:none !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+}
+.left-border-none {
+    border-left:none !important;
+    box-shadow: inset 0px 1px 0 rgba(0,0,0,.075);
+}
+.rounded-start.override-bs {
+    border-radius: 48px;
+}
+
+.rounded-end.override-bs {
+    border-radius: 48px;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* Container holding the image and the text */
+.image-container {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-left-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: white;
+    font-size: 38px;
+}
