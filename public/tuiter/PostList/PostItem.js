@@ -38,16 +38,16 @@ const PostListItem = (post) => {
                     </div>
                     <div class="row mt-3 mb-3">
                         <div class="col-3">
-                            <div><i class="fa fa-comment"></i>   ${post.comment}</div>
+                            <div class="text-nowrap text-secondary"><i class="fa fa-comment"></i>   ${post.comment}</div>
                         </div>
                         <div class="col-3">
-                            <div><i class="fa fa-retweet"></i> ${post.forward}</div>
+                            <div class="text-nowrap text-secondary"><i class="fa fa-retweet"></i> ${post.forward}</div>
                         </div>
                         <div class="col-3">
-                            <div><i class="fa fa-heart"></i>   ${post.like}</div>
+                            <div class="text-nowrap text-secondary"><i class="fa fa-heart"></i>   ${post.like}</div>
                         </div>
                         <div class="col-3">
-                            <div><i class="fa fa-share"></i></div>
+                            <div class="text-secondary"><i class="fa fa-share "></i></div>
                         </div>
                     </div>
                 </div>

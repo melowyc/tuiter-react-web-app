@@ -9,7 +9,7 @@ const WhoToFollowListItem = (who) => {
                 </div>
                 <div class="col-7">
                     <div class="fw-bold text-nowrap">${who.userName} <i class="fa fa-check-circle"></i></div>
-                    <div class="text-secondary">${who.handle}</div>
+                    <div class="">${who.handle}</div>
                 </div>
                 <div class="col-3">
                     <button class="rounded-pill btn btn-primary" width="100%">Follow</button>
@@ -25,7 +25,7 @@ const WhoToFollowListItem = (who) => {
                 </div>
                 <div class="col-6">
                     <div class="fw-bold text-nowrap">${who.userName} <i class="fa fa-check-circle"></i></div>
-                    <div class="text-secondary">${who.handle}</div>
+                    <div class="">${who.handle}</div>
                 </div>
                 <div class="col-4">
                     <button class="rounded-pill btn btn-primary" width="100%">Follow</button>
