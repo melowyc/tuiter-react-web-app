@@ -15,7 +15,7 @@ const NavigationSidebar = () => {
         <>
         <div className="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
         <div className="list-group">
-            <a className="list-group-item"><BsTwitter color="#60aaf6"/></a>
+            <a href="#" alt="" className="list-group-item"><BsTwitter color="#60aaf6"/></a>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <BiHomeAlt/> Home
             </Link>
@@ -25,27 +25,27 @@ const NavigationSidebar = () => {
             <Link to="/" className="list-group-item">
                 <RiComputerLine/> Labs
             </Link>
-            <a className={`list-group-item
+            <a href="#" alt="" className={`list-group-item
                             ${active === 'notifications'?'active':''}`}>
                 <AiOutlineBell/> Notifications
             </a>
-            <a className={`list-group-item
+            <a href="#" alt="" className={`list-group-item
                             ${active === 'messages'?'active':''}`}>
                 <SlEnvolope/> Messages
             </a>
-            <a className={`list-group-item
+            <a href="#" alt="" className={`list-group-item
                             ${active === 'bookmarks'?'active':''}`}>
                 <BsBookmark/> Bookmarks
             </a>
-            <a className={`list-group-item
+            <a href="#" alt="" className={`list-group-item
                             ${active === 'lists'?'active':''}`}>
                 <AiOutlineUnorderedList/> Lists
             </a>
-            <a className={`list-group-item
+            <a href="#" alt="" className={`list-group-item
                             ${active === 'profile'?'active':''}`}>
                 <BiUser/> Profile
             </a>
-            <a className={`list-group-item
+            <a href="#" alt="" className={`list-group-item
                             ${active === 'more'?'active':''}`}>
                 <AiOutlineMessage/> More
             </a>
@@ -54,7 +54,7 @@ const NavigationSidebar = () => {
 
         <div className="d-sm-block d-md-block d-lg-block d-xl-none d-xxl-none">
             <div className="list-group">
-                <a className="list-group-item"><BsTwitter color="#60aaf6"/></a>
+                <a href="#" alt="" className="list-group-item"><BsTwitter color="#60aaf6"/></a>
                 <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                     <BiHomeAlt/>
                 </Link>
@@ -64,27 +64,27 @@ const NavigationSidebar = () => {
                 <Link to="/" className="list-group-item">
                     <RiComputerLine/>
                 </Link>
-                <a className={`list-group-item
+                <a href="#" alt="" className={`list-group-item
                             ${active === 'notifications'?'active':''}`}>
                     <AiOutlineBell/>
                 </a>
-                <a className={`list-group-item
+                <a href="#" alt="" className={`list-group-item
                             ${active === 'messages'?'active':''}`}>
                     <SlEnvolope/>
                 </a>
-                <a className={`list-group-item
+                <a href="#" alt="" className={`list-group-item
                             ${active === 'bookmarks'?'active':''}`}>
                     <BsBookmark/>
                 </a>
-                <a className={`list-group-item
+                <a href="#" alt="" className={`list-group-item
                             ${active === 'lists'?'active':''}`}>
                     <AiOutlineUnorderedList/>
                 </a>
-                <a className={`list-group-item
+                <a href="#" alt="" className={`list-group-item
                             ${active === 'profile'?'active':''}`}>
                     <BiUser/>
                 </a>
-                <a className={`list-group-item
+                <a href="#" alt="" className={`list-group-item
                             ${active === 'more'?'active':''}`}>
                     <AiOutlineMessage/>
                 </a>

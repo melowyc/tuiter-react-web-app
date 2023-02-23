@@ -36,7 +36,7 @@ const PostListItem =  (
 ) => {
     return(
         <li className="list-group-item">
-            {post.retweeted != "" ?
+            {post.retweeted !== "" ?
                 <div>
 
                     <span className="fw-bold wd-font-color ms-5"><AiOutlineRetweet strokeWidth="30"/>{post.retweeted} Retweeted</span>
@@ -45,7 +45,7 @@ const PostListItem =  (
             }
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-pill" style={{position:"relative", left: "15px"}} width="75%" src={`/images/${post.avatarIcon}`} />
+                    <img className="rounded-pill" alt="" style={{position:"relative", left: "15px"}} width="75%" src={`/images/${post.avatarIcon}`} />
                 </div>
                 <div className="col-10 ">  
                     <div className="row">
@@ -69,13 +69,13 @@ const PostListItem =  (
                     
                     </div>
                     <div className="wd-border-radius-more" >
-                        {post.nested == "" ?
-                        <img className="wd-border-radius-1" width="100%" src={`/images/${post.image}`}/>
+                        {post.nested === "" ?
+                        <img className="wd-border-radius-1" alt=""  width="100%" src={`/images/${post.image}`}/>
                         :
                         <div className="container border rounded-4">
                             <div className="row">
                             <div className="col-1">
-                            <img className="rounded-pill" width="200%" src={`/images/${post["f-avatar"]}`}/>
+                            <img className="rounded-pill" width="200%" src={`/images/${post["f-avatar"]}`} alt="" />
                             </div>
 
                             <div className="col-11">
@@ -108,7 +108,7 @@ const PostListItem =  (
                             <div className="text-secondary"><HiOutlineArrowUpTray/></div>
                         </div>
                     </div>
-                    {post.thread != "" ?
+                    {post.thread !== "" ?
                         <div>
                             <a className="link-no-underline" href={""}>Show the thread</a>
                         </div> : ""
