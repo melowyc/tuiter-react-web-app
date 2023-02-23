@@ -110,7 +110,7 @@ const PostListItem =  (
                     </div>
                     {post.thread !== "" ?
                         <div>
-                            <a className="link-no-underline" href={""}>Show the thread</a>
+                            <a className="link-no-underline" href={""}>Show this thread</a>
                         </div> : ""
                     }
                 </div>
