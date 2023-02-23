@@ -5,6 +5,7 @@ import {BsTwitter, BsBookmark} from "react-icons/bs";
 import {BiHomeAlt, BiHash, BiUser} from "react-icons/bi";
 import {AiOutlineBell, AiOutlineUnorderedList, AiOutlineMessage} from "react-icons/ai";
 import {SlEnvolope} from "react-icons/sl";
+import {RiComputerLine} from "react-icons/ri";
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
@@ -14,39 +15,39 @@ const NavigationSidebar = () => {
         <>
         <div className="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
+            <a className="list-group-item"><BsTwitter color="#60aaf6"/></a>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-                Home
+                <BiHomeAlt/> Home
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-                Explore
+                <BiHash/> Explore
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <RiComputerLine/> Labs
             </Link>
             <a className={`list-group-item
                             ${active === 'notifications'?'active':''}`}>
-                Notifications
+                <AiOutlineBell/> Notifications
             </a>
             <a className={`list-group-item
                             ${active === 'messages'?'active':''}`}>
-                Messages
+                <SlEnvolope/> Messages
             </a>
             <a className={`list-group-item
                             ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+                <BsBookmark/> Bookmarks
             </a>
             <a className={`list-group-item
                             ${active === 'lists'?'active':''}`}>
-                Lists
+                <AiOutlineUnorderedList/> Lists
             </a>
             <a className={`list-group-item
                             ${active === 'profile'?'active':''}`}>
-                Profile
+                <BiUser/> Profile
             </a>
             <a className={`list-group-item
                             ${active === 'more'?'active':''}`}>
-                More
+                <AiOutlineMessage/> More
             </a>
         </div>
         </div>
@@ -61,7 +62,7 @@ const NavigationSidebar = () => {
                     <BiHash/>
                 </Link>
                 <Link to="/" className="list-group-item">
-                    Labs
+                    <RiComputerLine/>
                 </Link>
                 <a className={`list-group-item
                             ${active === 'notifications'?'active':''}`}>
