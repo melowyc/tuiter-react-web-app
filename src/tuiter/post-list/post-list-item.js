@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { HiOutlineArrowUpTray,HiOutlineChatBubbleLeft } from "react-icons/hi2";
 import { HiBadgeCheck } from "react-icons/hi";
 import { AiOutlineRetweet } from "react-icons/ai";
@@ -34,6 +34,7 @@ const PostListItem =  (
         }
     }
 ) => {
+    const [liked, setLiked] = useState("false");
     return(
         <li className="list-group-item">
             {post.retweeted !== "" ?

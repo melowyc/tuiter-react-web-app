@@ -11,12 +11,14 @@ const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
+    console.log(paths);
+    console.log(active);
     return (
         <>
         <div className="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
         <div className="list-group">
             <a href="#" alt="" className="list-group-item"><BsTwitter color="#60aaf6"/></a>
-            <Link to="/tuiter" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item ${active === "" ?'active':''}`}>
                 <BiHomeAlt/> Home
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>

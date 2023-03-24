@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {AiOutlineRetweet} from "react-icons/ai";
 import {HiOutlineChatBubbleLeft} from "react-icons/hi2";
 import {BsHeart, BsShare, BsFillHeartFill} from "react-icons/bs";
@@ -20,6 +20,18 @@ const TuitStats = (
         }
     }
 ) => {
+    const [liked_, setLiked_] = useState(post.liked);
+    const [likes_, setLikes_] = useState(post.likes);
+
+    const handle_like = async () => {
+        if (liked_) {
+            setLiked_(false);
+            setLikes_(likes_ + 1);
+        } else if (!liked_) {
+            setLiked_(true);
+            setLikes_(likes_ - 1);
+        }
+    }
     return(
 
             <div className="row mt-3 mb-3">
@@ -30,11 +42,13 @@ const TuitStats = (
                     <div className="text-nowrap text-secondary"><AiOutlineRetweet/> {post.retuits}</div>
                 </div>
                 <div className="col-3">
-                    {post.liked === true ?
-                        <div className="text-nowrap text-secondary"><BsFillHeartFill style={{color:"red"}}/>   {post.likes}</div>
-                        :
-                        <div className="text-nowrap text-secondary"><BsHeart/>   {post.likes}</div>
-                    }
+                    <div className="text-nowrap text-secondary" onClick={handle_like}>
+
+                        {!liked_ && <BsFillHeartFill style={{color:"red"}}/>}
+                        {liked_ && <BsHeart/>}
+
+                        {likes_}
+                    </div>
 
                 </div>
                 <div className="col-3">
