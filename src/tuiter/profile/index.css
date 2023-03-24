@@ -1,0 +1,66 @@
+.MuiButton-contained {
+    text-transform: lowercase !important;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.input-container label {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0, 23px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    color: #6f81a5;
+    font-size: 16px;
+    line-height: 1;
+    left: 16px;
+}
+
+.input-container:focus-within label {
+    transform: translate(0, 12px) scale(0.8);
+    color: #0a53e4;
+}
+.button-text {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #60aaf6;
+    text-decoration: none;
+    cursor: pointer;
+}
+img.darker {
+    filter: brightness(70%);
+}
+.camera1 {
+    fontSize:"20px";
+    color:grey;
+    /*opacity: 60%;*/
+    position: absolute;
+    top: -130px;
+    right: -220px;
+    z-index: 1;
+    background-size: 50px;
+    background-color: black;
+    opacity: 0.5;
+
+}
+.camera2 {
+    fontSize:"20px";
+    color:white;
+    position: absolute;
+    top: 0px;
+    right: 102px;
+    opacity: 0.5;
+}
+.close-icon {
+    fontSize:"20px";
+    color:white;
+    top: -130px;
+    right: -250px;
+    opacity: 0.5;
+}

@@ -16,7 +16,7 @@ const NavigationSidebar = () => {
         <div className="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
         <div className="list-group">
             <a href="#" alt="" className="list-group-item"><BsTwitter color="#60aaf6"/></a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <BiHomeAlt/> Home
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
@@ -41,10 +41,9 @@ const NavigationSidebar = () => {
                             ${active === 'lists'?'active':''}`}>
                 <AiOutlineUnorderedList/> Lists
             </a>
-            <a href="#" alt="" className={`list-group-item
-                            ${active === 'profile'?'active':''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <BiUser/> Profile
-            </a>
+            </Link>
             <a href="#" alt="" className={`list-group-item
                             ${active === 'more'?'active':''}`}>
                 <AiOutlineMessage/> More
@@ -55,7 +54,7 @@ const NavigationSidebar = () => {
         <div className="d-sm-block d-md-block d-lg-block d-xl-none d-xxl-none">
             <div className="list-group">
                 <a href="#" alt="" className="list-group-item"><BsTwitter color="#60aaf6"/></a>
-                <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+                <Link to="/tuiter" className={`list-group-item ${active === 'home'?'active':''}`}>
                     <BiHomeAlt/>
                 </Link>
                 <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
@@ -80,10 +79,9 @@ const NavigationSidebar = () => {
                             ${active === 'lists'?'active':''}`}>
                     <AiOutlineUnorderedList/>
                 </a>
-                <a href="#" alt="" className={`list-group-item
-                            ${active === 'profile'?'active':''}`}>
+                <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
                     <BiUser/>
-                </a>
+                </Link>
                 <a href="#" alt="" className={`list-group-item
                             ${active === 'more'?'active':''}`}>
                     <AiOutlineMessage/>

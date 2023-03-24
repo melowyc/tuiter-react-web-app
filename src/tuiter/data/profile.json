@@ -1,0 +1,17 @@
+[
+  {
+  "firstName": "Yichao",
+  "lastName": "Wu",
+  "handle": "@yichaowu",
+  "profilePicture": "yeats.jpg",
+  "bannerPicture": "polyglot.jpg",
+  "bio": "MSCS Student at NEU, Software Engineer Intern, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
+  "website": "youtube.com/webdevtv",
+  "location": "San Jose, CA",
+  "dateOfBirth": "3/16/1998",
+  "dateJoined": "3/2019",
+  "followingCount": 340,
+  "followersCount": 223,
+  "numOfTuits": 1234
+  }
+]
