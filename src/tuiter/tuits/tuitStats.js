@@ -26,10 +26,10 @@ const TuitStats = (
     const handle_like = async () => {
         if (liked_) {
             setLiked_(false);
-            setLikes_(likes_ + 1);
+            setLikes_(likes_ - 1);
         } else if (!liked_) {
             setLiked_(true);
-            setLikes_(likes_ - 1);
+            setLikes_(likes_ + 1);
         }
     }
     return(
@@ -44,8 +44,8 @@ const TuitStats = (
                 <div className="col-3">
                     <div className="text-nowrap text-secondary" onClick={handle_like}>
 
-                        {!liked_ && <BsFillHeartFill style={{color:"red"}}/>}
-                        {liked_ && <BsHeart/>}
+                        {liked_ && <BsFillHeartFill style={{color:"red"}}/>}
+                        {!liked_ && <BsHeart/>}
 
                         {likes_}
                     </div>
