@@ -1,6 +1,5 @@
 import React from "react";
 import {HiBadgeCheck} from "react-icons/hi";
-import {IoEllipsisHorizontal} from "react-icons/io5";
 import TuitStats from "./tuitStats";
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "../tuits/tuits-reducer";
