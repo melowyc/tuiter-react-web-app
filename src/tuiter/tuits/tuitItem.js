@@ -2,7 +2,9 @@ import React from "react";
 import {HiBadgeCheck} from "react-icons/hi";
 import TuitStats from "./tuitStats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+// import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+
 
 const TuitItem = (
     {
@@ -16,6 +18,8 @@ const TuitItem = (
             "replies": 123,
             "retuits": 432,
             "likes": 2345,
+            "disliked": true,
+            "dislikes": 111,
             "handle": "@spacex",
             "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s whatbeing a spacefaring civilization is all about. It’s about believing in the future and thinking that thefuture will be better than the past. And I can’t think of anything more exciting than going out there andbeing among the stars"
 
@@ -24,7 +28,8 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        // dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
@@ -53,7 +58,7 @@ const TuitItem = (
                         <span className="fw-normal">{post.tuit}</span>
 
                     </div>
-                    <div class="border-0">
+                    <div className="border-0">
                     <TuitStats
                         key={post._id} post={post}/>
                     </div>
