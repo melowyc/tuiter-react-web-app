@@ -1,7 +1,7 @@
 import React from "react";
 import {AiOutlineRetweet, AiOutlineDislike, AiFillDislike} from "react-icons/ai";
 import {HiOutlineChatBubbleLeft} from "react-icons/hi2";
-import {BsHeart, BsFillHeartFill} from "react-icons/bs";
+import {BsHeart, BsFillHeartFill, BsShare} from "react-icons/bs";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 const TuitStats = (
@@ -49,13 +49,13 @@ const TuitStats = (
     return(
 
             <div className="row mt-3 mb-3">
-                <div className="col-3">
+                <div className="col-2">
                     <div className="text-nowrap text-secondary"><HiOutlineChatBubbleLeft/>  {post.replies}</div>
                 </div>
-                <div className="col-3">
+                <div className="col-2 ms-3">
                     <div className="text-nowrap text-secondary"><AiOutlineRetweet/> {post.retuits}</div>
                 </div>
-                <div className="col-3">
+                <div className="col-2 ms-3">
                     <div className="text-nowrap text-secondary"
                          onClick={handle_like
                     }>
@@ -67,7 +67,7 @@ const TuitStats = (
                     </div>
 
                 </div>
-                <div className="col-3">
+                <div className="col-2 ms-3">
                     <div className="text-nowrap text-secondary"
                          onClick={handle_dislike
                          }>
@@ -78,6 +78,9 @@ const TuitStats = (
                         {post.dislikes}
                     </div>
 
+                </div>
+                <div className="col-2 ms-3">
+                    <div className="text-secondary"><BsShare/></div>
                 </div>
             </div>
 
