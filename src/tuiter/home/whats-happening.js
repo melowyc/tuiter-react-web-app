@@ -11,6 +11,8 @@ const WhatsHappening = () => {
             tuit: whatsHappening,
             userName: 'NASA',
             handle: 'nasa',
+            title:"NASA SPACE",
+            topic:"Space",
             time: '1s',
             liked: false, likes: 0, replies: 0, retuits: 0,
             disliked: false, dislikes: 0,

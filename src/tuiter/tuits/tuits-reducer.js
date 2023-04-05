@@ -19,6 +19,9 @@ const templateTuit = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "title": "NASA Space",
+    "disliked":0,
+    "dislikes":0,
     }
 
 const tuitsSlice = createSlice({
@@ -73,7 +76,6 @@ const tuitsSlice = createSlice({
             state.unshift({
                 ...action.payload,
                 ...templateTuit,
-                _id: (new Date()).getTime(),
 
             })
         }
